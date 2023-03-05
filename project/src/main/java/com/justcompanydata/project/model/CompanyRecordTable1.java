@@ -12,15 +12,13 @@ import javax.persistence.Column;
 @Entity
 @Table(name = "data_for_table_1")
 public class CompanyRecordTable1 {
-    /*"select ticker, company_name, ebit, total_debt, " +
-            "preferred_stock_value, noncontrolling_interest_value, " +
-            "cash_and_cashequivalents_value from company_data" + */
     @Id
+    @Column(name = "company_name")
+    private String companyName;
+
     @Column(name = "ticker")
     private String ticker;
 
-    @Column(name = "company_name")
-    private String companyName;
 
     @Column(name = "ebit")
     private BigDecimal ebit;

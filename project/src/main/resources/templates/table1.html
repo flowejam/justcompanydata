@@ -9,8 +9,8 @@
     <table id="table1">
         <thead>
             <tr>
-                <th>Ticker</th>
                 <th>Company Name</th>
+                <th>Ticker</th>
                 <th>EBIT</th>
                 <th>Total Debt</th>
                 <th>Preferred Stock Value</th>
@@ -22,8 +22,8 @@
 
         <tbody>
             <tr th:each="rec : ${recordList}">
-                <td th:text="${rec.ticker}">ticker</td>
                 <td th:text="${rec.companyName}">companyName</td>
+                <td th:text="${rec.ticker}">ticker</td>
                 <td th:text="${rec.ebit}">ebit</td>
                 <td th:text="${rec.totalDebt}">totalDebt</td>
                 <td th:text="${rec.preferredStockValue}">preferredStockValue</td>
