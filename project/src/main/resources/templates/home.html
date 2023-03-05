@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Home Page</title>
+    <link th:href="@{/styles.css}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>
         Home Page
     </h1>
+    <p>View the data tables:
+        <br/>
+        <a th:href="@{/datatables/table1/1}">Table 1: company data</a>
+    </p>
 </body>
 
 </html>

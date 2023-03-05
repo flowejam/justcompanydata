@@ -1,0 +1,15 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+#table1 {
+    border-collapse: collapse;
+}
+
+#table1 td, #table1 th {
+    border: 1px solid black;
+}
+
+#table1 th {
+    padding: 8px;
+}

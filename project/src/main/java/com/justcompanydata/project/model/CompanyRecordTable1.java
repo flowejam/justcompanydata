@@ -37,9 +37,21 @@ public class CompanyRecordTable1 {
     @Column(name = "cash_and_cashequivalents_value")
     private BigDecimal cashAndCashEquivalentsValue;
 
+    @Column(name = "fiscal_year")
+    private int fiscalYear;
+
+
+    public int getFiscalYear() {
+        return fiscalYear;
+    }
+
+    public void setFiscalYear(int fiscalYear) {
+        this.fiscalYear = fiscalYear;
+    }
+
     public CompanyRecordTable1(String ticker, String companyName, BigDecimal ebit, BigDecimal totalDebt,
             BigDecimal preferredStockValue, BigDecimal noncontrollingInterestValue,
-            BigDecimal cashAndCashEquivalentsValue) {
+            BigDecimal cashAndCashEquivalentsValue, int fiscalYear) {
         this.ticker = ticker;
         this.companyName = companyName;
         this.ebit = ebit;
@@ -47,6 +59,7 @@ public class CompanyRecordTable1 {
         this.preferredStockValue = preferredStockValue;
         this.noncontrollingInterestValue = noncontrollingInterestValue;
         this.cashAndCashEquivalentsValue = cashAndCashEquivalentsValue;
+        this.fiscalYear = fiscalYear;
     }
 
     public CompanyRecordTable1() {

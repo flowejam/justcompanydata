@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Table 1: company data</title>
+    <link th:href="@{/styles.css}" rel="stylesheet">
+</head>
+<body>
+    <table id="table1">
+        <thead>
+            <tr>
+                <th>Ticker</th>
+                <th>Company Name</th>
+                <th>EBIT</th>
+                <th>Total Debt</th>
+                <th>Preferred Stock Value</th>
+                <th>Noncontrolling Interest Value</th>
+                <th>Cash and Cash Equivalents</th>
+                <th>Fiscal Year</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr th:each="rec : ${recordList}">
+                <td th:text="${rec.ticker}">ticker</td>
+                <td th:text="${rec.companyName}">companyName</td>
+                <td th:text="${rec.ebit}">ebit</td>
+                <td th:text="${rec.totalDebt}">totalDebt</td>
+                <td th:text="${rec.preferredStockValue}">preferredStockValue</td>
+                <td th:text="${rec.noncontrollingInterestValue}">noncontrollingInterestValue</td>
+                <td th:text="${rec.cashAndCashEquivalentsValue}">cashAndCashEquivalentsValue</td>
+                <td th:text="${rec.fiscalYear}">fiscalYear</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+
+</html>
