@@ -6,6 +6,21 @@
     <link th:href="@{/styles.css}" rel="stylesheet">
 </head>
 <body>
+    <a th:href="@{/}">Home Page</a>
+    <p>
+        <a th:if="${pageNumber > 1}"  th:href="@{/datatables/table1/1}">First</a>
+        <span th:unless="${pageNumber > 1}">First</span>
+
+        <a th:if="${pageNumber > 1}"  th:href="@{'/datatables/table1/' + ${pageNumber - 1}}">Previous</a>
+        <span th:unless="${pageNumber > 1}">Previous</span>
+
+        <a th:if="${pageNumber < numPages}"  th:href="@{'/datatables/table1/' + ${pageNumber + 1}}">Next</a>
+        <span th:unless="${pageNumber < numPages}">Next</span>
+
+        <a th:if="${pageNumber < numPages}"  th:href="@{'/datatables/table1/' + ${numPages}}">Last</a>
+        <span th:unless="${pageNumber < numPages}">Last</span>
+    </p>
+
     <table id="table1">
         <thead>
             <tr>
@@ -33,6 +48,20 @@
             </tr>
         </tbody>
     </table>
+    <p>
+        <a th:if="${pageNumber > 1}"  th:href="@{/datatables/table1/1}">First</a>
+        <span th:unless="${pageNumber > 1}">First</span>
+
+        <a th:if="${pageNumber > 1}"  th:href="@{'/datatables/table1/' + ${pageNumber - 1}}">Previous</a>
+        <span th:unless="${pageNumber > 1}">Previous</span>
+
+        <a th:if="${pageNumber < numPages}"  th:href="@{'/datatables/table1/' + ${pageNumber + 1}}">Next</a>
+        <span th:unless="${pageNumber < numPages}">Next</span>
+
+        <a th:if="${pageNumber < numPages}"  th:href="@{'/datatables/table1/' + ${numPages}}">Last</a>
+        <span th:unless="${pageNumber < numPages}">Last</span>
+    </p>
+    <a th:href="@{/}">Home Page</a>
 
 
 </body>
