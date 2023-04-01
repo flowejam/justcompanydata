@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.data.domain.Page;
 
-import com.justcompanydata.project.service.Table1Service;
+import com.justcompanydata.project.service.ServiceTable1;
 import com.justcompanydata.project.model.CompanyRecordTable1;
 
 import java.util.List;
@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
 @RequestMapping("/datatables/table1")
 public class ControllerTable1 {
     @Autowired
-    private Table1Service tblService;
+    private ServiceTable1 tblService;
 
     @GetMapping("/{pageNumber}")
     public String getPage(Model model, @PathVariable int pageNumber) {

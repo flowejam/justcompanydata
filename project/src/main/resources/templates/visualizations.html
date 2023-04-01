@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>visualizations</title>
+    <link th:href="@{/styles.css}" rel="stylesheet">
+</head>
+<body>
+    <a th:href="@{/}">Home Page</a> <br />
+
+    <h3>Visualizations by company</h3>
+
+    <div>
+    <p>Search to display a visualization for a certain company</p>
+        <form action="/visualizations" method="POST">
+            <input type="text" placeholder="Search by ticker symbol.." name="tkr">
+            <button type="submit">Search</button>
+        </form>
+        <br />
+    </div>
+
+
+    <div th:unless="${#strings.isEmpty(tkrReturned)}">
+        <img  th:src="@{/images/debt_to_ebit/{symbol}_debt_ebit.png(symbol=${tkrReturned})}" />
+    </div>
+
+    <div th:if ="${#strings.isEmpty(tkrReturned)}">
+        <h4 style="color : red;">Enter a valid ticker symbol</h4>
+    </div>
+
+    <div> 
+        <br />
+        <img th:src="@{/images/debt_to_ebit/all_{ratio}.png(ratio='debt_ebit')}" />
+        <br />
+    </div>
+</body>

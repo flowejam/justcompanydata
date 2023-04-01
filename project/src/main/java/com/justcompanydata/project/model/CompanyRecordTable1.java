@@ -13,6 +13,9 @@ import javax.persistence.Column;
 @Table(name = "data_for_table_1")
 public class CompanyRecordTable1 {
     @Id
+    @Column(name = "rec_id")
+    private Long recId;
+
     @Column(name = "company_name")
     private String companyName;
 
