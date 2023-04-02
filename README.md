@@ -5,7 +5,7 @@ This should be regarded as a prototype. The information and data included is sol
 
 
 Permissions granted: <br>
-Permission is granted for any user to build and run this software locally.
+Permission is granted for non-commercial use only.
 
 
 Instructions (*nix): 
