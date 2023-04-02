@@ -11,6 +11,7 @@ Instructions (*nix):
 
 [Screencast from 04-01-2023 07:06:02 PM.webm](https://user-images.githubusercontent.com/91450942/229327210-1c648e70-eb23-4bda-99a6-002ba0b16356.webm)
 
-\n
+<br>
+
 Project description: 
 This Spring Boot app includes a H2 database containing publicly available information extracted or derived from the SEC's bulk data files (the program used to extract the data is not included here). The links to this bulk data can be found here: https://www.sec.gov/edgar/sec-api-documentation. Thanks to the SEC for making such information publicly available.
