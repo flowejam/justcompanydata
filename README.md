@@ -1,6 +1,12 @@
 # justcompanydata
 
-Disclaimer: This should be regarded as a prototype. The information and data included is solely for informational purposes, and should not be used to make investment decisions. This project is in no way affiliated with nor approved by the SEC.
+Disclaimer: This should be regarded as a prototype. The information and data included is solely for informational purposes, and should not be used to make investment decisions. This project is in no way affiliated with nor approved by the SEC. 
+
+<br>
+
+Permissions granted: Permission is granted for any user to build and run this software locally.
+
+<br>
 
 Instructions (*nix): 
 1. git clone https://github.com/flowejam/justcompanydata.git
@@ -15,3 +21,4 @@ Instructions (*nix):
 
 Project description: 
 This Spring Boot app includes a H2 database containing publicly available information extracted or derived from the SEC's bulk data files (the program used to extract the data is not included here). The links to this bulk data can be found here: https://www.sec.gov/edgar/sec-api-documentation. Thanks to the SEC for making such information publicly available.
+
