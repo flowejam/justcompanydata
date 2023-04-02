@@ -1,12 +1,12 @@
 # justcompanydata
 
-Disclaimer: This should be regarded as a prototype. The information and data included is solely for informational purposes, and should not be used to make investment decisions. This project is in no way affiliated with nor approved by the SEC. 
+Disclaimer: 
+This should be regarded as a prototype. The information and data included is solely for informational purposes, and should not be used to make investment decisions. This project is in no way affiliated with nor approved by the SEC. 
 
-<br>
 
-Permissions granted: Permission is granted for any user to build and run this software locally.
+Permissions granted: 
+Permission is granted for any user to build and run this software locally.
 
-<br>
 
 Instructions (*nix): 
 1. git clone https://github.com/flowejam/justcompanydata.git
