@@ -22,3 +22,4 @@ Instructions (*nix):
 Project description: 
 This Spring Boot app includes a H2 database containing publicly available information extracted or derived from the SEC's bulk data files (the program used to extract the data is not included here). The links to this bulk data can be found here: https://www.sec.gov/edgar/sec-api-documentation. Thanks to the SEC for making such information publicly available.
 
+Notes on data: a 6% discount rate is used for the preferred stock valuation.
