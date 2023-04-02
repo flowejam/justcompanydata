@@ -1,10 +1,10 @@
 # justcompanydata
 
-Disclaimer: 
+Disclaimer: <br>
 This should be regarded as a prototype. The information and data included is solely for informational purposes, and should not be used to make investment decisions. This project is in no way affiliated with nor approved by the SEC. 
 
 
-Permissions granted: 
+Permissions granted: <br>
 Permission is granted for any user to build and run this software locally.
 
 
